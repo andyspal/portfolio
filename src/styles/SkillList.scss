@@ -1,0 +1,46 @@
+@use 'colours';
+
+.skills{
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6, minmax(5rem, 1fr));
+    color: colours.$magenta-color;
+    gap: 3rem;
+    padding: 2rem;
+    svg{
+        width: 100%;    
+        height: auto;  
+        max-width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .skills {
+        padding:2rem 0rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .skills {
+        // grid-template-columns: repeat(3, minmax(0rem, 1fr));
+        gap: 1rem;
+
+        svg {
+            max-width: 4rem;
+        }
+    }
+
+}
+@media only screen and (max-width: 840px) {
+    .skills {
+        grid-template-columns: repeat(3, minmax(0rem, 1fr));
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .skills {
+        grid-template-columns: repeat(2, minmax(0rem, 1fr));
+    }
+}
