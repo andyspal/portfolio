@@ -1,5 +1,6 @@
 @use 'colours';
 #About {
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +19,9 @@
                 color: colours.$grey-color;
                 text-decoration: none;
             }
+            a:active {
+                color: colours.$white-color;
+            }
         }
 
     }
@@ -27,6 +31,14 @@
     #About {
         .text-container {
             padding: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    #About {
+        .text-container {
+            margin-bottom: 0;
         }
     }
 }

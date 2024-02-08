@@ -4,16 +4,16 @@ const Form = () => {
     return (
         <div className='form-container'>
             <form action="#" method="POST">
-                <label for="nombre">Name:</label>
-                <input type="text" id="nombre" name="nombre" required />
+                <label for="name" className='bold uppercase'>Name</label>
+                <input type="text" id="name" name="name" required />
 
-                <label for="email">Email:</label>
+                <label for="email" className='bold uppercase'>Email</label>
                 <input type="text" id="email" name="email" required />
 
-                <label for="mensaje">Message:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <label for="message" className='bold uppercase'>Message</label>
+                <textarea id="message" name="mensaje" rows="3" required></textarea>
 
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" className='bold uppercase'/>
             </form>
         </div>
     )

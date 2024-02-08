@@ -4,14 +4,11 @@ header {
     button{
         font-weight: bold;
         background-color: transparent;
-        border: inherit;
+        border: none;
         font-size: 1.6rem;
         z-index: 3;
         color: colours.$teal-color;
-    }
-    button:hover{
         cursor: pointer;
     }
-    button:active{
-    }
+
 }

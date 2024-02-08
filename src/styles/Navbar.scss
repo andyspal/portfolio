@@ -21,17 +21,11 @@ nav {
                 }
             }
         }
-        li:hover{
-            a {
-            }
-            svg {
-            }
+        li:hover a{
+                color: colours.$grey-color;
         }
-        li:active{
-            a{
-            }
-            svg{
-            }
+        li:active a{
+                color: colours.$white-color;
         }
     }
 }

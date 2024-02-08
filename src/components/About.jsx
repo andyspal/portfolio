@@ -4,7 +4,7 @@ import SkillList from './SkillList'
 const About = () => {
   return (
     <div id='About'>
-      <h2 className='title bold'>About me</h2>
+      <h2 className='title bold uppercase'>About me</h2>
       <div className='text-container'>
         <p className='bio'>
           Hi everyone, my name is Andy Spalla, I am a full stack web developer from Argentina. 

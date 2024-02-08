@@ -1,11 +1,52 @@
+@use 'colours';
 .form-container {
-    padding: 2rem 3rem;
-    max-width: 50rem;
+    margin: 2rem 3rem;
+    max-width: 35rem;
+    width: 100%;
     form {
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        label:first-child {
+            margin-top: 0;
+        }
         label {
-            input {
+            color: colours.$grey-color;
+            font-size: 1.1rem;
+            margin: .8rem 0;
+            font-weight: bold;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+        }
 
-            }
+        input, textarea {
+            font-weight: bold;
+            padding: .3rem .6rem;
+            background-color: colours.$teal-color;
+            color: colours.$grey-color;
+            border: none;
+            font-size: 1.1rem;  
+           
+        }
+        input:last-child {
+            background-color: colours.$magenta-color;
+            align-self: end;
+            width: clamp(3rem, 100%, 10rem);
+            color: colours.$grey-color;
+            font-size: 1.1rem;
+        }
+
+        input:last-child:hover{
+            background-color: #d5427f;
+            cursor: pointer;
+        }
+        input:last-child:active {
+            background-color: #f34b91;
+        }
+        textarea {
+            overflow-y: hidden;
+            resize: none;
+            margin-bottom: 1rem;
         }
     }
 }
